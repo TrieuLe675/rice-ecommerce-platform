@@ -1,0 +1,17 @@
+# 1. Các file tài liệu hướng dẫn Agent (Chỉ dùng ở local)
+PROJECT_PLAN.md
+.sql
+
+# 2. Các file bảo mật (Tuyệt đối không push lên GitHub)
+.env
+.env.*
+
+# 3. Thư mục chứa thư viện (Rất nặng, GitHub sẽ từ chối nếu push)
+node_modules/
+backend/node_modules/
+frontend/node_modules/
+
+# 4. Các file rác,logs sinh ra trong quá trình chạy lỗi
+npm-debug.log*
+pnpm-debug.log*
+yarn-error.log*
