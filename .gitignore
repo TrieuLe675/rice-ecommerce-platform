@@ -6,6 +6,8 @@ db_schema.sql
 # 2. Các file bảo mật (Tuyệt đối không push lên GitHub)
 .env
 .env.*
+!.env.example
+
 
 # 3. Thư mục chứa thư viện (Rất nặng, GitHub sẽ từ chối nếu push)
 node_modules/
