@@ -1,6 +1,7 @@
 # 1. Các file tài liệu hướng dẫn Agent (Chỉ dùng ở local)
 PROJECT_PLAN.md
-.sql
+db_schema.sql
+
 
 # 2. Các file bảo mật (Tuyệt đối không push lên GitHub)
 .env
