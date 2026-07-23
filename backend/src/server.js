@@ -5,6 +5,9 @@ import helmet from 'helmet';
 
 import { connectDB } from './config/db.js';
 import authRoutes from './routes/auth.routes.js';
+import categoryRoutes from './routes/category.routes.js';
+import productRoutes from './routes/product.routes.js';
+import inventoryRoutes from './routes/inventory.routes.js';
 import errorHandler from './middlewares/error.middleware.js';
 
 const app = express();
@@ -42,6 +45,11 @@ app.get('/health', (req, res) => {
 
 // Auth routes — tiền tố /api/auth
 app.use('/api/auth', authRoutes);
+
+// Phase 2 routes
+app.use('/api/categories', categoryRoutes);
+app.use('/api/products', productRoutes);
+app.use('/api/inventories', inventoryRoutes);
 
 // 404 handler — các route không tồn tại
 app.use((req, res) => {
